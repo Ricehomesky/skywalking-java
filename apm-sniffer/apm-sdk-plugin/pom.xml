@@ -23,7 +23,7 @@
     <parent>
         <groupId>org.apache.skywalking</groupId>
         <artifactId>java-agent-sniffer</artifactId>
-        <version>9.3.0-SNAPSHOT</version>
+        <version>9.5.0-SNAPSHOT</version>
     </parent>
 
     <artifactId>apm-sdk-plugin</artifactId>
@@ -123,7 +123,7 @@
         <module>guava-eventbus-plugin</module>
         <module>hutool-plugins</module>
         <module>micronaut-plugins</module>
-        <module>nats-2.14.x-2.15.x-plugin</module>
+        <module>nats-2.14.x-2.16.5-plugin</module>
         <module>jedis-plugins</module>
         <module>apm-armeria-plugins</module>
         <module>jetty-thread-pool-plugin</module>
@@ -137,6 +137,7 @@
         <module>rocketMQ-client-java-5.x-plugin</module>
         <module>activemq-artemis-jakarta-client-2.x-plugin</module>
         <module>c3p0-0.9.x-plugin</module>
+        <module>solon-2.x-plugin</module>
     </modules>
     <packaging>pom</packaging>
 
@@ -145,13 +146,10 @@
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <sdk.plugin.related.dir />
         <shade.net.bytebuddy.source>net.bytebuddy</shade.net.bytebuddy.source>
         <shade.net.bytebuddy.target>${shade.package}.${shade.net.bytebuddy.source}</shade.net.bytebuddy.target>
 
-        <agent.package.dest.dir>${project.build.directory}${sdk.plugin.related.dir}/../../../../skywalking-agent
-        </agent.package.dest.dir>
-        <plugin.dest.dir>${agent.package.dest.dir}/plugins</plugin.dest.dir>
+        <plugin.dest.dir>${maven.multiModuleProjectDirectory}/skywalking-agent/plugins</plugin.dest.dir>
 
         <ant-contrib.version>1.0b3</ant-contrib.version>
         <ant-nodeps.version>1.8.1</ant-nodeps.version>

@@ -21,7 +21,7 @@
     <parent>
         <artifactId>java-agent-sniffer</artifactId>
         <groupId>org.apache.skywalking</groupId>
-        <version>9.3.0-SNAPSHOT</version>
+        <version>9.5.0-SNAPSHOT</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
@@ -32,10 +32,7 @@
         <shade.net.bytebuddy.target>${shade.package}.${shade.net.bytebuddy.source}</shade.net.bytebuddy.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 
-        <sdk.plugin.related.dir />
-        <agent.package.dest.dir>${project.build.directory}${sdk.plugin.related.dir}/../../../../skywalking-agent
-        </agent.package.dest.dir>
-        <optional.plugin.dest.dir>${agent.package.dest.dir}/optional-plugins</optional.plugin.dest.dir>
+        <optional.plugin.dest.dir>${maven.multiModuleProjectDirectory}/skywalking-agent/optional-plugins</optional.plugin.dest.dir>
 
         <ant-contrib.version>1.0b3</ant-contrib.version>
         <ant-nodeps.version>1.8.1</ant-nodeps.version>
@@ -59,6 +56,7 @@
         <module>trace-sampler-cpu-policy-plugin</module>
         <module>nacos-client-2.x-plugin</module>
         <module>netty-http-4.1.x-plugin</module>
+        <module>caffeine-3.x-plugin</module>
     </modules>
 
     <dependencies>

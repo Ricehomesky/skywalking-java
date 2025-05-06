@@ -17,7 +17,7 @@ metrics based on the tracing data.
   * [Jetty Server](http://www.eclipse.org/jetty/) 9.x -> 11.x
   * [Spring WebFlux](https://docs.spring.io/spring/docs/current/spring-framework-reference/web-reactive.html) 5.x (Optional¹) -> 6.x (Optional¹)
   * [Undertow](http://undertow.io/)  1.3.0.Final -> 2.0.27.Final
-  * [RESTEasy](https://resteasy.github.io/)  3.1.0.Final -> 6.2.4.Final
+  * [RESTEasy](https://resteasy.dev/)  3.1.0.Final -> 6.2.4.Final
   * [Play Framework](https://www.playframework.com/) 2.6.x -> 2.8.x
   * [Light4J Microservices Framework](https://doc.networknt.com/) 1.6.x -> 2.x
   * [Netty SocketIO](https://github.com/mrniko/netty-socketio) 1.x
@@ -26,6 +26,7 @@ metrics based on the tracing data.
   * [Grizzly](https://github.com/eclipse-ee4j/grizzly) 2.3.x -> 4.x
   * [WebSphere Liberty](https://github.com/OpenLiberty/open-liberty) 23.x
   * [Netty HTTP](https://github.com/netty/netty) 4.1.x (Optional²)
+  * [Solon](https://github.com/opensolon/solon) 2.7.x -> 2.8.x
 * HTTP Client
   * [Feign](https://github.com/OpenFeign/feign) 9.x
   * [Netflix Spring Cloud Feign](https://github.com/spring-cloud/spring-cloud-openfeign) 1.1.x -> 2.x
@@ -75,12 +76,12 @@ metrics based on the tracing data.
 * MQ
   * [RocketMQ](https://github.com/apache/rocketmq) 3.x-> 5.x
   * [RocketMQ-gRPC](http://github.com/apache/rocketmq-clients) 5.x
-  * [Kafka](http://kafka.apache.org) 0.11.0.0 -> 3.2.3
+  * [Kafka](http://kafka.apache.org) 0.11.0.0 -> 3.7.1
   * [Spring-Kafka](https://github.com/spring-projects/spring-kafka) Spring Kafka Consumer 1.3.x -> 2.3.x (2.0.x and 2.1.x not tested and not recommended by [the official document](https://spring.io/projects/spring-kafka))
   * [ActiveMQ](https://github.com/apache/activemq) 5.10.0 -> 5.15.4
   * [RabbitMQ](https://www.rabbitmq.com/) 3.x-> 5.x
   * [Pulsar](http://pulsar.apache.org) 2.2.x -> 2.9.x
-  * [NATS](https://github.com/nats-io/nats.java) 2.14.x -> 2.15.x
+  * [NATS](https://github.com/nats-io/nats.java) 2.14.x -> 2.16.5
   * [ActiveMQ-Artemis](https://github.com/apache/activemq) 2.30.0 -> 2.31.2
   * Aliyun ONS 1.x (Optional¹)
 * NoSQL
@@ -138,8 +139,9 @@ metrics based on the tracing data.
   * JRE Callable and Runnable (Optional²)
   * JRE ForkJoinPool (Optional²)
 * Cache
-  * [Ehcache](https://www.ehcache.org/) 2.x
+  * [Ehcache](https://www.ehcache.org/) 2.x (Optional²)
   * [GuavaCache](https://github.com/google/guava) 18.x -> 23.x (Optional²)
+  * [Caffeine](https://github.com/ben-manes/caffeine) 3.x (Optional²)
 * Kotlin
   * [Coroutine](https://kotlinlang.org/docs/coroutines-overview.html) 1.0.1 -> 1.3.x (Optional²)
 * GraphQL

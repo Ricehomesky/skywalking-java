@@ -21,7 +21,7 @@
     <parent>
         <artifactId>apm-sdk-plugin</artifactId>
         <groupId>org.apache.skywalking</groupId>
-        <version>9.3.0-SNAPSHOT</version>
+        <version>9.5.0-SNAPSHOT</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
@@ -29,5 +29,12 @@
     <name>undertow-worker-thread-pool-plugin</name>
     <url>http://maven.apache.org</url>
 
-
+    <dependencies>
+        <dependency>
+            <groupId>org.jboss.xnio</groupId>
+            <artifactId>xnio-api</artifactId>
+            <version>3.8.4.Final</version>
+            <scope>provided</scope>
+        </dependency>
+    </dependencies>
 </project>

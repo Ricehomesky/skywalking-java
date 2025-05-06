@@ -48,12 +48,14 @@
 - jackson-2.x
 - jdk-http-plugin
 - jdk-threading-plugin
+- jdk-virtual-thread-executor-plugin
 - jedis-2.x-3.x
 - jedis-4.x
 - jetty-client-9.0
 - jetty-client-9.x
 - jetty-server-9.x
 - kafka-0.11.x/1.x/2.x
+- kafka-3.7.x
 - kotlin-coroutine
 - lettuce-5.x
 - light4j
@@ -161,7 +163,7 @@
 - hutool-http-5.x
 - micronaut-http-client-3.2.x-3.6.x
 - micronaut-http-server-3.2.x-3.6.x
-- nats-client-2.14.x-2.15.x
+- nats-client-2.14.x-2.16.5
 - impala-jdbc-2.6.x
 - jdk-forkjoinpool-plugin
 - jetty-thread-pool
@@ -177,3 +179,5 @@
 - spring-webflux-6.x-webclient
 - activemq-artemis-jakarta-client-2.x
 - c3p0-0.9.x
+- solon-2.x
+- caffeine-3.x
